@@ -40,6 +40,7 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smooting:antialiased;
+    -webkit-
 }
 
 body,html {
@@ -52,6 +53,9 @@ body,html {
     padding: 0;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
 a {
     text-decoration: none;
 }
@@ -59,6 +63,13 @@ a:active,
 a:focus,
 a:visited {
     outline: none;
+}
+
+.container {
+    max-width: 1794px;
+    width: 95%;
+    margin: auto;
+    overflow: hidden
 }
 
 header {
@@ -71,7 +82,6 @@ header {
     position: fixed;
     width: 100%;
     z-index: 99;
-   /*  margin-left: 38px; */
    padding-left: 38px;
 }
 
@@ -83,9 +93,8 @@ header .containerr {
 }
 
 .containerr {
-    max-width: 1794px;
-    width: 95%;
-    margin: auto;
+    width: 100%;
+    margin-right: 40px;
     overflow: hidden; 
 }
 
@@ -173,6 +182,7 @@ header .containerr .links a:hover:after {
         height: 60px;
         width: 100%;
         z-index: 100;
+        justify-content: space-between;
     }
 
     .header2-mobheader-container {
@@ -193,12 +203,13 @@ header .containerr .links a:hover:after {
     } 
 
     .menu-toggle {
-        display: block;
+        display: flex;
         flex-direction: column;
         cursor: pointer;
         padding: 10px;
-        padding-left: 205px;
         margin: 10px;
+        float: right;
+        padding-left: 270px;
        
     }
 
@@ -211,11 +222,12 @@ header .containerr .links a:hover:after {
 
     .menu {
         display: none;
-        background-color: #000;
+        float:right;
+        padding-top: 120px;
     }
     
     .menu.active {
-        display: flex;
+        display: inline-block;
     }
     
     .menu ul {
@@ -418,11 +430,11 @@ margin-right: 20px;
 .timer .timer-item {
     display: flex;
     flex-direction: column;
-    padding: 0px 10px;
+    padding: 0px 0px;
 }
 
 .timer .text-item:first-child {
-    padding-left: 10px;
+    padding-left: 0px;
 }
 
 .timer .text-item .ti {
@@ -1408,10 +1420,12 @@ width: 100%;
     line-height: 160%;
     color: #000;
     display: none;
+    transition: max-height 1s ease;
 }
 
 .accordion-item.active .accordion-content {
     display: block;
+    transition: max-height 1s ease-out;
   }
 
 
