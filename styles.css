@@ -257,7 +257,7 @@ header .containerr .links a:hover:after {
         font-size: 18px;
         font-family: inter-reg;
         cursor: pointer;
-        width: 100%;
+        width: 100vw;
         padding: 10px 0;
         text-align: center;
         position: relative;
