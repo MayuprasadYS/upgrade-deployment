@@ -83,10 +83,9 @@ header .containerr {
 }
 
 .containerr {
-    max-width: 100%;
-    width: 100%;
+    max-width: 1794px;
+    width: 95%;
     margin: auto;
-    margin-right: 85px;
     overflow: hidden; 
 }
 
@@ -258,7 +257,7 @@ header .containerr .links a:hover:after {
         font-size: 18px;
         font-family: inter-reg;
         cursor: pointer;
-        width: 71%;
+        width: 100%;
         padding: 10px 0;
         text-align: center;
         position: relative;
@@ -498,6 +497,10 @@ margin-right: 20px;
         -o-object-position: center;
         object-position: center;
     }
+
+    .marquee-block {
+        width: 100vw;
+    }
 } 
 
 
@@ -509,8 +512,8 @@ margin-right: 20px;
     background-color: #ec6859;
     color: #000;
     font-size:medium;
-    justify-content: center;
-    align-content: center;
+    display: flex;
+    align-items:center;
     position: fixed;
     z-index: 99;
 }
@@ -1766,6 +1769,10 @@ width: 100%;
     object-position: center;
 }
 
+.footer-footer .footer-container .container-undefined {
+    width: 100vw;
+}
+
 .footer-footer .footer-container .footer-social {
     display: flex;
     justify-content: center;
@@ -1781,7 +1788,7 @@ width: 100%;
 }
 
 .footer-footer .footer-container .footer-privacypolicy {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
