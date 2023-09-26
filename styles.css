@@ -1168,7 +1168,7 @@ width: 100%;
     background-color: #000;
     position: relative;
     z-index: 5;
-    padding: 170px 8% 200px;
+    padding: 170px 0% 200px;
 }
 
 .section-5-content {
@@ -1185,6 +1185,7 @@ width: 100%;
     line-height: 90%;
     display: flex;
     margin-bottom: 80px;
+    padding-left: 5%;
 }
 
 
@@ -1196,8 +1197,15 @@ width: 100%;
     padding-bottom: 5%;
 }
 
+.section-5-content .section-5-item:nth-child(2) .section-5-item-image {
+    order: 2;
+}
+.section-5-content .section-5-item:nth-child(4) .section-5-item-image {
+    order: 2;
+}
+
 .section-5-content .section-5-item-image {
-    width: 42%;
+    width: 50%;
     display: flex;
     justify-content: center;
 }
@@ -1205,6 +1213,7 @@ width: 100%;
 .section-5-content .section-5-item-desc {
     width: 50%;
     margin: 0;
+    padding-left: 5%;
 }
 
 .section-5-content .section-5-item-desc h2 {
