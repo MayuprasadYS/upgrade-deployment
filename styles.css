@@ -40,7 +40,6 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smooting:antialiased;
-    -webkit-
 }
 
 body,html {
@@ -187,19 +186,21 @@ header .containerr .links a:hover:after {
 
     .header2-mobheader-container {
         height: 100%;
-    }
-
-    .header2-mobheader-content {
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .header2-mobheader-content {
+        
         height: 100%;
     }
 
     .header2-mobheader-logo  img {
         width: 115px;
         height: 43px;
-        padding-left: 38px;
+        padding-left: 10px;
     } 
 
     .menu-toggle {
@@ -209,7 +210,8 @@ header .containerr .links a:hover:after {
         padding: 10px;
         margin: 10px;
         float: right;
-        padding-left: 270px;
+        position: fixed;
+        right: 10px;
        
     }
 
@@ -223,11 +225,13 @@ header .containerr .links a:hover:after {
     .menu {
         display: none;
         float:right;
-        padding-top: 120px;
+        padding-top: 50px;
+        padding-right: 25px;
+        height: 100%;
     }
     
     .menu.active {
-        display: inline-block;
+        display: flex;
     }
     
     .menu ul {
@@ -258,7 +262,7 @@ header .containerr .links a:hover:after {
         bottom: 0;
         left: 0;
         right: 0;
-        width: 100%;
+        width: 100vw;
         z-index: 100;
     }
 
@@ -306,7 +310,6 @@ header .containerr .links a:hover:after {
     bottom: 0;
     z-index: 1;
     overflow: hidden;
-    margin-left: 38px;
 }
 
 .section-1-content .home-left{
@@ -760,7 +763,6 @@ padding-bottom: 50px;
     padding-bottom: 4%;
     z-index: 3;
     position: relative;
-    margin-left: 28px;
 }
 
 .section-3-content .section3-title {
@@ -967,7 +969,6 @@ padding-bottom: 50px;
 .section-4-content {
     padding-bottom: 1.5%;
     z-index: 6;
-    margin-left: 28px;
 }
 
 .section-4-content .home-title p {
