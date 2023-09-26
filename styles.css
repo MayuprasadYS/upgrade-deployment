@@ -242,6 +242,7 @@ header .containerr .links a:hover:after {
     .menu ul li {
         padding: 10px;
         border-bottom: 1px solid #ccc;
+        background-color: #091010;
     }
     
     .menu ul li a {
@@ -1430,12 +1431,11 @@ width: 100%;
     line-height: 160%;
     color: #000;
     display: none;
-    transition: max-height 1s ease;
+    transition: max-height 0.4s ease-out;
 }
 
 .accordion-item.active .accordion-content {
     display: block;
-    transition: max-height 1s ease-out;
   }
 
 
