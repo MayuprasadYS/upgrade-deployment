@@ -202,11 +202,11 @@ header .containerr .links a:hover:after {
         display: flex;
         flex-direction: column;
         cursor: pointer;
-        padding: 10px;
+        padding: 4px;
         margin: 10px;
         float: right;
         position: fixed;
-        right: 10px;
+        right: 0px;
        
     }
 
