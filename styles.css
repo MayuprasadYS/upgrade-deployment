@@ -81,7 +81,6 @@ header {
     position: fixed;
     width: 100%;
     z-index: 99;
-   padding-left: 38px;
 }
 
 header .containerr {
@@ -91,11 +90,6 @@ header .containerr {
     align-items: center;
 }
 
-.containerr {
-    width: 100%;
-    margin-right: 40px;
-    overflow: hidden; 
-}
 
 header .containerr a {
     display: flex;
