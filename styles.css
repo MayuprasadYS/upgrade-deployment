@@ -187,7 +187,8 @@ header .containerr .links a:hover:after {
     }
 
     .header2-mobheader-content {
-        
+        display: flex;
+        align-items: center;
         height: 100%;
     }
 
