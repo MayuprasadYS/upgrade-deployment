@@ -26,6 +26,10 @@
                 <div style="margin-right: -25px;"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/28c4c942-0f37-4fcb-8291-f8916a00f2a0/j5tMULV5mo.json" background="transparent" speed="1" style="width:70px; height: 70px" direction="1" mode="normal" loop autoplay></dotlottie-player></div> &nbsp; Book your calender 5:00 PM | 31 <sup>st</sup> Aug. 2023 &nbsp;&nbsp;
                 <span> Grab your seat now &nbsp;➡</span>&nbsp;
                  Just for ₹499/- &nbsp;<del>₹799</del>/-  &nbsp; &nbsp; 
+                <div style="margin-right: -25px;"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/28c4c942-0f37-4fcb-8291-f8916a00f2a0/j5tMULV5mo.json" background="transparent" speed="1" style="width:70px; height: 70px" direction="1" mode="normal" loop autoplay></dotlottie-player></div> &nbsp; Book your calender 5:00 PM | 31 <sup>st</sup> Aug. 2023 &nbsp;&nbsp;
+                <span> Grab your seat now &nbsp;➡</span>&nbsp;
+                 Just for ₹499/- &nbsp;<del>₹799</del>/-  &nbsp; &nbsp; 
+               
             </div>
         </div>
     <header>
@@ -81,15 +85,15 @@
                         <div class="text-item">
                             0<!--  -->3<br><span class="ti">DAYS</span>
                         </div>
-                        : &nbsp;
+                         : 
                         <div class="text-item">
                             23 <br><span class="ti">HRS</span>
                         </div>
-                        : &nbsp;
+                        :
                         <div class="text-item">
                             59 <br><span class="ti">MIN</span>
                         </div>
-                        : &nbsp;
+                        :
                         <div class="text-item">
                             55 <br> <span class="ti">SECS</span>
                         </div>
@@ -114,9 +118,12 @@
             </div>
         </section>
         <section class="section-2">
+            <div class="section-2-background">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/a8e4264c-2a59-4b6a-90e4-5e34ec39c82c/f22ZBabMdJ.json" background="transparent" speed="1" style="width: 100%; height: 100%" direction="1" mode="normal" loop autoplay></dotlottie-player>
+            </div>
             <div class="section-2-content container">
                 <div class="section-2-star">
-                    <img src="./Images/rating pic dark.jpg" alt="rating">
+                    <img src="./Images/rating_2.svg" alt="rating">
                 </div>
                 <div class="slider">
                     <div class="slides">
@@ -126,19 +133,15 @@
                         <input type="radio" name="radio-btn" id="radio4">
                         <div class="slide lirst">
                             <img src="./Images/section2_1.jpg" alt="image-1">
-                            <p>Is it possible for a fresher to become a good product manager?</p>
                         </div>
                         <div class="slide">
                             <img src="./Images/section2_2.jpg" alt="image-2">
-                            <p>Is Figma worth the hype?</p>
                         </div>
                         <div class="slide">
                             <img src="./Images/section2_3.jpg" alt="image-3">
-                            <p>What is worth learning-Slack or Asana?</p>
                         </div>
                         <div class="slide">
                             <img src="./Images/section2_4.jpg" alt="image-4">
-                            <p>Uncover the real-life secrets in this unmissable masterclass.</p>
                         </div>
                         <div class="navigation-auto">
                             <div class="auto-btn1"></div>
@@ -154,6 +157,39 @@
                         <label for="radio4" class="manual-btn"></label>
                     </div>
                 </div>
+                <div class="slider-1">
+                    <div class="slides-1">
+                        <input type="radio" name="radio-btn1" id="radioa1">
+                        <input type="radio" name="radio-btn1" id="radioa2">
+                        <input type="radio" name="radio-btn1" id="radioa3">
+                        <input type="radio" name="radio-btn1" id="radioa4">
+                        <div class="slide-1 first">
+                            <h2>Is it possible for a fresher to become a good Product Manager?</h2>
+                        </div>
+                        <div class="slide-1">
+                            <h2>Is Figma worth the hype?</h2>
+                        </div>
+                        <div class="slide-1">
+                            <h2>What is worth learning - Slack or Asana?</h2>
+                        </div>
+                        <div class="slide-1">
+                            <h2>Uncover the real-life secrets in this unmissable masterclass.</h2>
+                        </div>
+                        <div class="navigation-auto-1">
+                            <div class="auto-btna1"></div>
+                            <div class="auto-btna2"></div>
+                            <div class="auto-btna3"></div>
+                            <div class="auto-btna4"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual-1">
+                        <label for="radioa1" class="manual-btn-1"></label>
+                        <label for="radioa2" class="manual-btn-1"></label>
+                        <label for="radioa3" class="manual-btn-1"></label>
+                        <label for="radioa4" class="manual-btn-1"></label>
+                    </div>
+                </div>
+
                 <div class="secondsection-title">
                     <p>31 <sup>st</sup>Aug 2022 | 5:00 PM IST</p>
                 </div>
@@ -548,7 +584,17 @@
             if(counter > 4){
                 counter = 1;
             }
-        }, 5000);
+        }, 3500);
+
+
+        var countera =1;
+        setInterval(function(){
+            document.getElementById('radioa' + countera).checked = true;
+            countera++;
+            if(countera > 4){
+                countera = 1;
+            }
+        }, 3500);
 
         const accordionItems = document.querySelectorAll('.accordion-item');
     
