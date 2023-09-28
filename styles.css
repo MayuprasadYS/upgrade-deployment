@@ -455,6 +455,10 @@ margin-right: 20px;
         font-size: 17px;
     }
 
+    .section-1-content .home-left {
+        width: 50%;
+    }
+
     .section-1-content .home-left .home-title
      p {
         font-size: 42px;
@@ -473,8 +477,13 @@ margin-right: 20px;
         font-size: 30px;
      }
 
+     .section-1-content .home-left .home-title .home-bottombutton {
+        display: flex;
+        flex-wrap: wrap-reverse;
+     }
+
      .section-1-content .home_image__cZBAK {
-        width: 45%;
+        width: 42%;
      }
 
      .section-1-content .home_image__cZBAK img {
@@ -763,6 +772,8 @@ padding-bottom: 50px;
     width: 850px;
     height: 60px;
     overflow: hidden;
+    background: linear-gradient(120deg, #ffbc00, #fd4c35, #ff1e78);
+    border-radius: 49px;
 }
 
 .section-2-content .slides-1 {
@@ -786,12 +797,10 @@ padding-bottom: 50px;
     font-family: c-medium;
     font-size: 30px;
     color: #fff;
-    border-radius: 49px;
     align-items: center;
     display: flex;
     text-align: center;
     justify-content: center;
-    background: linear-gradient(120deg, #ffbc00, #fd4c35, #ff1e78)
 }
 
 .section-2-content .navigation-manual-1 {
@@ -944,6 +953,31 @@ padding-bottom: 50px;
 }
 
 
+@media only screen and (min-width:1700px) {
+    .section-2 {
+        height: 90vh;
+    }
+
+    .section-2-content .section-2-star img {
+        width: 100%;
+    }
+
+    .section-2-content .slider {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .section-2-content .slides {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .section-2-content .slide img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
 
 @media only screen and (min-width:320px)and (max-width:768px) {
     .section-2-content .section-2-star {
@@ -957,6 +991,29 @@ padding-bottom: 50px;
     .section-2-content .section-2-star img {
         width: 273px;
         height: 86px;
+    }
+
+    .section-2-content .slider-1 {
+        width: 355px;
+        height: 50px;
+    }
+    
+    .section-2-content .slides-1 {
+        width: 355px;
+        height: 50px;
+    }
+
+    .section-2-content .slide-1 h2 {
+        width: 355px;
+        height: 50px;
+        font-family: c-medium;
+        font-size: 20px;
+        padding: 5px;
+        color: #fff;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        justify-content: center;
     }
 }
 
