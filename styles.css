@@ -153,6 +153,7 @@ header .containerr .links a:hover:after {
     header {
         height: 70px;
         display: flex;
+        top: 40px;
         align-items: center;
     }
     header .containerr .links a {
@@ -644,8 +645,9 @@ margin-right: 20px;
   }
 
   @media only screen and (min-width:1700px) {
-    .marquee-container {
+    .marquee-content {
         height: 40px;
+        font-size: 16px;
     }
   }
   
@@ -1054,17 +1056,17 @@ padding-bottom: 50px;
     }
 
     .section-2-content .slider-1 {
-        width: 355px;
+        width: 340px;
         height: 50px;
     }
     
     .section-2-content .slides-1 {
-        width: 355px;
+        width: 340px;
         height: 50px;
     }
 
     .section-2-content .slide-1 h2 {
-        width: 355px;
+        width: 340px;
         height: 50px;
         font-family: c-medium;
         font-size: 20px;
