@@ -149,6 +149,24 @@ header .containerr .links a:hover:after {
     left: 0;
 }
 
+@media only screen and (min-width:1700px) {
+    header {
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+    header .containerr .links a {
+        font-size: 22px;
+        padding: 15px 20px;
+    }
+}
+
+@media only screen and (max-width:1600px) {
+    header .containerr .navbar-logo {
+        width: 90px;
+    }
+}
+
 @media only screen and (min-width:320px)and (max-width:768px) {
     header {
         display: none;
@@ -358,7 +376,7 @@ margin-right: 20px;
     font-size: 15px;
     font-family: inter-reg;
     cursor: pointer;
-    padding: 15px 30px;
+    padding: 15px 25px;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -388,6 +406,10 @@ margin-right: 20px;
 .section-1-content .home-left .home-title .home-bottombutton-gradient p:hover:after {
     opacity: 1;
     width: 100%;
+}
+
+.section-1-content .home-left .home-title .home-bottombutton-gradient p:hover  svg path {
+    stroke: #ec6859
 }
 
 .section-1-content .home-left .home-title .home-bottombutton-right {
@@ -490,6 +512,7 @@ margin-right: 20px;
         width: 115%;
      }
 }
+
 
 
 @media only screen and (min-width:320px)and (max-width:778px) {
@@ -606,6 +629,10 @@ margin-right: 20px;
     background-color: #fff;
     color: #ec6859;
   }
+
+  .marquee-content span:hover svg path {
+    stroke: #ec6859;
+}
   
   @keyframes marquee-animation {
     0% {
@@ -615,10 +642,16 @@ margin-right: 20px;
       transform: translateX(-200%);
     }
   }
+
+  @media only screen and (min-width:1700px) {
+    .marquee-container {
+        height: 40px;
+    }
+  }
   
   @media only screen and (min-width:320px)and (max-width:778px) {
     .marquee-content {
-        animation: marquee-animation 60s linear infinite;
+        animation: marquee-animation 75s linear infinite;
     }
 
     @keyframes marquee-animation {
@@ -914,6 +947,10 @@ padding-bottom: 50px;
     border: 1px solid #fbc230;
 }
 
+.section-2-content .secondsec-buttongradient p svg path {
+    stroke: #fbc230
+}
+
 .section-2-content .secondsec-buttongradient p:after {
     content: "";
     position: absolute;
@@ -936,6 +973,10 @@ padding-bottom: 50px;
 .section-2-content .secondsec-buttongradient p:hover:after {
     opacity: 1;
     width: 100%;
+}
+
+.section-2-content .secondsec-buttongradient p:hover svg path {
+    stroke: #000
 }
 
 .section-2-content .second-section-right2 {
@@ -976,6 +1017,25 @@ padding-bottom: 50px;
         width: 300px;
         height: 300px;
     }
+
+    .section-2-content .secondsection-title p {
+        font-size: 34px;
+    }
+
+    .section-2-content .secondsec-buttongradient p {
+        font-size: 26px;
+        padding: 23px 65px;
+    }
+
+    .section-2-content .second-section-right2 {
+        font-size: 35px;
+    }
+
+    .section-2-content .second-section-right2 span {
+        font-size: 35px;
+    }
+
+    
 }
 
 
@@ -1457,6 +1517,13 @@ width: 100%;
     padding-left: 5%;
 }
 
+.section-5-content .section-5-maintitle h1 svg {
+    position: relative;
+    width: 6%;
+    margin-top: 1.5%;
+    z-index: 2
+}
+
 
 
 .section-5-content .section-5-item {
@@ -1595,6 +1662,13 @@ width: 100%;
         line-height: 100%;
         display: flex;
         flex-direction: column;
+    }
+
+    .section-5-content .section-5-maintitle h1 svg {
+        margin: 10px auto 0;
+        width: 80px;
+        height: 50px;
+        transform: scaleX(-1);
     }
 
     .section-5-content .section-5-item {
