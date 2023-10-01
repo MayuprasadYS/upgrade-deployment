@@ -1631,7 +1631,7 @@ padding-bottom: 50px;
     background-color: #000;
     position: relative;
     z-index: 5;
-    padding: 170px 0% 200px;
+    padding: 170px 10% 300px;
 }
 
 .section-5-content {
@@ -1644,18 +1644,17 @@ padding-bottom: 50px;
     font-size: 45px;
     font-family: c-bold;
     color: #ee2c3c;
-    width: 100%;
+    width: 150%;
     line-height: 90%;
     display: flex;
-    margin-bottom: 80px;
-    padding-left: 5%;
 }
 
 .section-5-content .section-5-maintitle h1 svg {
     position: relative;
     width: 6%;
     margin-top: 1.5%;
-    z-index: 2
+    z-index: 2;
+    margin-left: 2%;
 }
 
 
@@ -1675,19 +1674,28 @@ padding-bottom: 50px;
 }
 
 .section-5-content .section-5-item-image {
-    width: 50%;
+    width: 42%;
     display: flex;
     justify-content: center;
+}
+
+.section-5-content .section-5-item-image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center
 }
 
 .section-5-content .section-5-item-desc {
     width: 50%;
     margin: 0;
-    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .section-5-content .section-5-item-desc h2 {
-    font-size: 50px;
+    font-size: 30px;
     font-family: c-bold;
     line-height: 110%;
     padding-bottom: 4%;
@@ -1706,7 +1714,7 @@ padding-bottom: 50px;
     height: 5px;
     background-color: #fff;
     border-radius: 50%;
-    margin-top: 6px;
+    margin-top: 8px;
     margin-right: 10px;
 }
 
@@ -1720,14 +1728,15 @@ padding-bottom: 50px;
     font-family: inter-reg;
     color: #fff;
     line-height: 210%;
+    white-space: pre-line;
 }
 
 .section-5-content .section-5-item-desc .section-5-lastitem-title {
     font-size: 19px;
     font-family: inter-medium;
     color: #ec6859;
-    line-height: 180%;
-    padding-top: 0px;
+    line-height: 120%;
+    padding-top: 15px;
 }
 
 .section-5-content .section-5-item-desc .section-5-lastitem-description {
@@ -1735,6 +1744,7 @@ padding-bottom: 50px;
     font-family: inter-reg;
     color: #fff;
     line-height: 140%;
+    white-space: pre-line;
 }
 
 .section-5-buttongradient {
@@ -1782,6 +1792,52 @@ padding-bottom: 50px;
     width: 100%;
 }
 
+.section-5-buttongradient p:hover svg path {
+    stroke: #ec6859
+}
+
+
+@media only screen and (min-width:1700px) {
+    .section-5-content .section-5-maintitle h1 {
+        font-size: 76px;
+        width: 100%;
+    }
+
+    .section-5-content .section-5-maintitle h1 svg {
+        margin-top: 0;
+        width: 8%;
+    }
+
+    .section-5-content .section-5-item-desc {
+        padding-right: 0;
+    }
+
+    .section-5-content .section-5-item-desc h2 {
+        font-size: 50px;
+    }
+
+    .section-5-content .section-5-item-desc .section-5-itemdescription .section-5-itemdescription-pointer {
+        margin-top: 13px;
+    }
+
+    .section-5-content .section-5-item-desc p {
+        font-size: 22px;
+    }
+
+    .section-5-content .section-5-item-desc .section-5-lastitem-title {
+        font-size: 26px;
+        line-height: 120%;
+    }
+
+    .section-5-content .section-5-item-desc .section-5-lastitem-description {
+        font-size: 22px;
+    }
+
+    .section-5-buttongradient p {
+        font-size: 22px;
+        padding: 23px 65px;
+    }
+}
 
 
 
