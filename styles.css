@@ -2057,7 +2057,7 @@ padding-bottom: 50px;
 }
 
 .section-7-content .teamcontainer1 .section-7-teamitem  .section-7-designation {
-    font-size: 16px;
+    font-size: 15px;
     font-family: inter-reg;
     color: #fff;
 }
@@ -2182,6 +2182,7 @@ padding-bottom: 50px;
     font-size: 14px;
     font-family: inter-reg;
     cursor: pointer;
+    text-transform: uppercase;
     padding: 15px 20px;
     position: relative;
     z-index: 1;
@@ -2250,6 +2251,65 @@ padding-bottom: 50px;
     margin-top: -180px
 }
 
+
+@media only screen and (min-width:1700px) {
+    .section-7 {
+        padding-top: 150px;
+    }
+
+    .section-7-content .section-7-title1 {
+        font-size: 70px;
+    }
+
+    .section-7-content .teamcontainer1 .section-7-teamitem  .section-7-designation {
+        font-size: 19px;
+    }
+
+    .section-7-content .section-7-title2 {
+        padding-top: 200px;
+    }
+
+    .section-7-content .section-7-title2-content {
+        font-size: 70px;
+    }
+
+    .section-7-content .section-7-title2-content span {
+        width: 120px;
+        height: 120px;
+    }
+
+    .section-7-content .section-7-teamcontainer2 .section-7-teamitem2 img {
+        width: 160.73px;
+        height: 160.73px;
+    }
+
+    .section-7-content .section-7-teamcontainer2 .section-7-teamitem2 .section-7-name {
+        font-size: 22px;
+    }
+
+    .section-7-content .section-7-teamcontainer2 .section-7-teamitem2 .section-7-designation {
+        font-size: 18px;
+    }
+
+    .section-7-content .section-7-title3 {
+        padding-top: 200px;
+        font-size: 70px;
+    }
+
+    .section-7-content .section-7-buttongradient p {
+        font-size: 22px;
+        padding: 22px 45px;
+    }
+
+    .section-7-rocketguy img {
+        transform: scale(1.4);
+    }
+
+    .whitebottom {
+        height: 300px;
+        margin-top: -300px;
+    }
+}
 
 
 
@@ -2386,6 +2446,10 @@ padding-bottom: 50px;
     justify-content: flex-end;
 }
 
+.footer-footer .footer-container .pad {
+    padding-bottom: 50px;
+}
+
 
 .footer-footer .footer-container .footer-fixed img {
     width: 256.55px;
@@ -2403,13 +2467,17 @@ padding-bottom: 50px;
     justify-content: center;
     margin-left: 3%;
     background-color: #fff;
-    padding-top: 20px;
 }
 
 .footer-footer .footer-container .footer-social a {
     align-items: center;
     display: flex;
     margin-right: 60px;
+}
+
+.footer-footer .footer-container .footer-social a svg {
+    width: 40px;
+    height: 40px;
 }
 
 .footer-footer .footer-container .footer-privacypolicy {
@@ -2451,6 +2519,40 @@ padding-bottom: 50px;
 }
 
 
+@media only screen and (min-width:1700px) {
+    .footer-footer .footer-container .footer-fixed img {
+        width: 276.55px;
+        height: 118.29px;
+    }
+
+    .footer-footer .footer-container .pad {
+        padding-bottom: 150px;
+    }
+
+    .footer-footer .footer-container .footer-social a svg {
+        margin-left: 20px;
+    }
+
+    .footer-footer .footer-container .footer-privacypolicy {
+        padding-top: 90px;
+    }
+
+    .footer-footer .footer-container .footer-privacypolicy {
+        padding-top: 90px;
+        font-size: 22px;
+    }
+
+    .footer-footer .footer-container .footer-privacypolicy .footer-copyright {
+        font-size: 20px;
+        padding-bottom: 50px;
+    }
+
+    .footer-footer .footer-container .footer-privacypolicy .footer-kurage {
+        font-size: 19px;
+    }
+
+}
+
 
 @media only screen and (min-width:320px)and (max-width:768px) {
     .footer-footer {
@@ -2467,16 +2569,18 @@ padding-bottom: 50px;
         padding: 20px 0 0px;
     }
 
-    .footer-footer .footer-container .footer-logo .footer-fixed img {
+    .footer-footer .footer-container .footer-fixed img {
         transform: scale(.7)
     }
+    
 
     .footer-footer .footer-container .footer-social {
-        padding-top: 40px;
+        display: flex;
         margin-left: 25px;
-        scale: .55;
+        scale: .8;
         align-items: center;
-        padding-left: 50px;
+        justify-content: center;
+        padding-left: 80px;
     }
 
     .footer-footer .footer-container .footer-privacypolicy {
