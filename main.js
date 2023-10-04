@@ -73,4 +73,44 @@ var counter =1;
           
           // Initial call to set the initial countdown values
           updateCountdown();
+
           
+const toggleModal = () => {
+  document.querySelector('.modal')
+    .classList.toggle('modal-hidden');
+};
+
+ document.querySelector('#show-modal')
+    .addEventListener('click',toggleModal);
+
+ document.querySelector('#show-modal1')
+    .addEventListener('click',toggleModal);
+
+ document.querySelector('#show-modal2')
+    .addEventListener('click',toggleModal);
+
+  document.querySelector('#show-modal3')
+    .addEventListener('click',toggleModal);
+
+  document.querySelector('#show-modal4')
+    .addEventListener('click',toggleModal);
+
+  document.querySelector('#show-modal5')
+    .addEventListener('click',toggleModal);
+
+  document.querySelector('#show-modal6')
+    .addEventListener('click',toggleModal);
+
+  document.querySelector('#show-modal7')
+    .addEventListener('click',toggleModal);
+
+  document.querySelector('#show-modal8')
+    .addEventListener('click',toggleModal);
+
+
+
+  document.querySelector('#submit1')
+    .addEventListener('click',toggleModal );
+
+  document.querySelector('.close-modal')
+    .addEventListener('click', toggleModal);

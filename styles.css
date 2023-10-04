@@ -256,7 +256,7 @@ header .containerr .links a:hover:after {
     .menu ul li {
         padding: 10px;
         border-bottom: 1px solid #ccc;
-        background-color: #091010;
+        background-color: #091010ce;
     }
     
     .menu ul li a {
@@ -300,8 +300,280 @@ header .containerr .links a:hover:after {
 
 }
 
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .794);
+    z-index: 200
+}
+
+.modal-contents {
+    width: 100%;
+    height: 100%;
+    padding: 200px 0 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto
+}
+
+.close-modal {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.form-container {
+    width: 622px;
+    overflow-wrap: break-word;
+    padding: 50px;
+    background-color: #f5f5f5;
+    color: #1f1f24
+}
+
+.form-container-getfree {
+    font-size: 35px;
+    color: #262f3a;
+    font-family: c-medium;
+    text-align: center
+}
+
+.form-container-getfree span {
+    font-family: c-bold;
+    color: #ec6859
+}
+
+.footer-container-expcon {
+    font-size: 35px;
+    font-family: c-medium;
+    color: #262f3a;
+    text-align: center;
+    padding: 0;
+}
+
+.footer-container-form {
+    padding: 40px 5% 0;
+}
+
+.formnameinput {
+    width: 100%;
+    margin-bottom: 25px
+}
+
+.formnameinput input {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 21px;
+    font-family: inter-light;
+    color: #000
+}
+
+.formnameinput input::placeholder {
+    color: #bbbbbd;
+}
+
+.form-termsandcondition {
+    padding-top: 10px;
+}
+
+.form-termsandcondition p {
+    font-size: 19px;
+    font-family: c-bold;
+    color: #262f3a;
+    text-align: center;
+    line-height: 130%;
+}
+
+.form-termsandcondition span {
+    color: #ee2c3c;
+}
+
+.form-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0 0
+}
+
+.form-button button {
+    display: inline-block;
+    background-image: linear-gradient(90deg, #ffbc00, #fd4c35, #ff1e78);
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: inter-reg;
+    cursor: pointer;
+    padding: 23px 65px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 45px;
+    margin-top: 8%;
+    border: none
+}
+
+.form-button button span {
+    padding-left: 10px
+}
+
+.form-button button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #000, #000, #000);
+    transition: all .4s;
+    z-index: -1;
+    opacity: 0;
+    overflow: hidden;
+    border-radius: 45px
+}
+
+.form-button button:hover {
+    color: #fff;
+}
+
+.form-button button:hover:after {
+    opacity: 1;
+    width: 100%
+}
+
+.modal-hidden {
+    display: none;
+}
+
+@media only screen and (max-width:1700px) {
+    .modal-contents {
+        padding: 50px 0 20px;
+    }
+
+    .close-modal svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .form-container {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .form-container-getfree {
+        font-size: 24px;
+    }
+
+    .footer-container-expcon {
+        font-size: 24px;
+    }
+
+    .footer-container-form {
+        padding: 40px 5% 10px;
+    }
+
+    .formnameinput {
+        width: 100%;
+        margin-bottom: 20px
+    }
+
+    .formnameinput input {
+        width: 100%;
+        height: 45px;
+        font-size: 17px;
+    }
+
+    .form-termsandcondition {
+        padding-top: 10px;
+    }
+
+    .form-termsandcondition p {
+        font-size: 14px;
+    }
+
+    .form-button button {
+        font-size: 14px;
+        padding: 15px 20px;
+        margin-top: 2%;
+    }
+
+}
 
 
+@media only screen and (min-width:320px)and (max-width:778px){
+    .modal-contents {
+        padding: 50px 0 80px;
+        justify-content: center;
+    }
+
+    .close-modal {
+        margin-bottom: 20px;
+    }
+
+    .close-modal svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .form-container {
+        width: 652px;
+        max-width: 90vw;
+        height: auto;
+        padding: 15px 10px;
+    }
+
+    .form-container-getfree {
+        font-size: 20px;
+    }
+
+    .footer-container-expcon {
+        font-size: 20px;
+    }
+
+    .footer-container-form {
+        padding: 20px 5%;
+    }
+
+    .formnameinput {
+        width: 100%;
+        margin-bottom: 15px
+    }
+
+    .formnameinput input {
+        width: 100%;
+        padding: 0 10px;
+        font-size: 16px;
+    }
+
+    .form-termsandcondition {
+        padding-top: 0;
+    }
+
+    .form-termsandcondition p {
+        font-size: 14px;
+        line-height: 130%;
+    }
+
+    .form-button {
+        padding: 0;
+    }
+
+    .form-button button {
+        font-size: 15px;
+        padding: 19px 50px;
+        margin-top: 4%;
+    }
+
+}
 
 
 
@@ -1974,6 +2246,11 @@ padding-bottom: 50px;
 .accordion-item.active .accordion-content {
     display: flex;
     max-height: 400px;
+    transition: max-height 0.4s ease-out;
+}
+
+.active .accordion-header svg  {
+    transform: rotate(180deg) ;
 }
 
 @media only screen and (min-width:1700px) {
@@ -2025,6 +2302,13 @@ padding-bottom: 50px;
 
     .section-6-accordion .accordion-header{
         font-size: 16px;
+        justify-content: space-between;
+    }
+
+    .section-6-accordion .accordion-header svg {
+       min-width: 17px;
+        min-height: 17px;
+        margin-left: 5px;
     }
 
     .section-6-accordion  .accordion-content {
